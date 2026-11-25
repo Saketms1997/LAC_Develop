@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice"><defs>
+    <filter id="v1" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.014" numOctaves="5" seed="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0"/>
+      <feComponentTransfer result="a"><feFuncA type="table" tableValues="0 0 0 0 0.9 0 0 0 0 0 0"/></feComponentTransfer>
+      <feFlood flood-color="#a3a8b0" result="c"/><feComposite in="c" in2="a" operator="in"/>
+    </filter>
+    <filter id="v2" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="4" seed="58"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1 0 0 0 0"/>
+      <feComponentTransfer result="a"><feFuncA type="table" tableValues="0 0 0 0 0 0.55 0 0 0 0 0"/></feComponentTransfer>
+      <feFlood flood-color="#d3d5d8" result="c"/><feComposite in="c" in2="a" operator="in"/>
+    </filter>
+    <radialGradient id="g" cx="50%" cy="40%" r="80%"><stop offset="0" stop-color="#fff" stop-opacity="0.12"/><stop offset="1" stop-color="#000" stop-opacity="0.12"/></radialGradient></defs><g transform="rotate(35 400 400) translate(-60 -60) scale(1.45)">
+    <rect x="-400" y="-400" width="1600" height="1600" fill="#eeeeec"/>
+    <rect x="-400" y="-400" width="1600" height="1600" filter="url(#v2)"/>
+    <rect x="-400" y="-400" width="1600" height="1600" filter="url(#v1)"/></g>
+    <rect width="800" height="800" fill="url(#g)"/></svg>
